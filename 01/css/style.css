@@ -1,3 +1,110 @@
+blockquote,body,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,table,td,textarea,th,ul {
+	margin:0;
+	padding:0
+}
+html {
+	min-height:100%
+}
+body {
+	position:relative;
+	max-width:640px;
+	min-height:100%;
+	margin:0 auto;
+	background-color:#dfdfdf;
+	color:#333;
+	font:14px/1.2 "PingFang SC",tahoma,Helvetica,'Microsoft Yahei',arial
+}
+li,ul {
+	list-style:none
+}
+a {
+	text-decoration:none;
+	color:#333
+}
+a,button,input,textarea {
+	border:none;
+	outline:0;
+	-webkit-appearance:none;
+	-webkit-tap-highlight-color:transparent;
+	-webkit-tap-highlight-color:transparent
+}
+img {
+	vertical-align:middle;
+	border:0
+}
+.clear:after,.clear:before,.clearfix:after,.clearfix:before {
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden
+}
+.clear:after,.clearfix:after {
+	clear:both
+}
+.clear,.clearfix {
+	zoom:1
+}
+.show {
+	display:block
+}
+.hide {
+	display:none
+}
+.fl {
+	float:left
+}
+.fr {
+	float:right
+}
+.rel {
+	position:relative
+}
+.abs {
+	position:absolute
+}
+.center {
+	text-align:center
+}
+.icon {
+	display:inline-block
+}
+.small-font {
+	font-size:12px;
+	-webkit-transform-origin-x:0;
+	-webkit-transform:scale(.9)
+}
 [v-cloak] {
 	display: none;
+}
+
+/**************
+* 提示信息弹框
+***************/
+.toast-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+}
+.toast {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 120px;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    transition: background .2s ease-in-out;
+}
+.toast-in {
+    background: rgba(0, 0, 0, .8);
+    transition: background .2s ease-in-out;
 }

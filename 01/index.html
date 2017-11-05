@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<!-- STYLESHEET START -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="http://i0.ulecdn.com/c/event/2017/1111/part/style.css?v=5">
-    <!-- / STYLESHEET END -->
-	<title>require js</title>
-</head>
-<body>
-	<div class="loading"></div>
-	<div id="app" v-cloak>
-		<div>{{  }}</div>
-	</div>
-	<script src="js/require.js" data-main="js/main"></script>
-</body>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="//i2.ulecdn.com/i/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="//i2.ulecdn.com/i/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="//i2.ulecdn.com/i/favicon.ico" rel="bookmark" type="image/x-icon">
+    <!--STYLESHEET START-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css?v=5">
+    <!--/STYLESHEET END-->
+    <title>
+      require js
+    </title>
+  </head>
+  
+  <body>
+    <div class="loading"></div>
+    <div class="wrapper" id="app">
+      <!--BANNER START-->
+      <section class="banner rel">
+        <date-component></date-component>
+        <img src="//i0.ulecdn.com/i/event/2017/1111/province/jilin/banner_01.jpg" width="100%">
+        <img src="//i0.ulecdn.com/i/event/2017/1111/province/jilin/banner_02.jpg" width="100%">
+      </section>
+      <!--/BANNER END-->
+
+      <section id="shop01">
+        <h3 class="title">
+          <img src="//i0.ulecdn.com/i/event/2017/1111/province/title_bk_1.jpg" width="100%">
+        </h3>
+        <div class="list">
+          <ul class="ul-style clearfix"></ul>
+        </div>
+      </section>
+      <section id="shop02">
+        <h3 class="title">
+          <img src="//i0.ulecdn.com/i/event/2017/1111/province/title_ys_1.jpg" width="100%">
+        </h3>
+        <div class="list">
+          <ul class="ul-style clearfix"></ul>
+        </div>
+      </section>
+      
+      <!-- BOTTOM START -->
+      <ad-component></ad-component>
+      <rule-component></rule-component>
+      <!-- BOTTOM END -->
+
+
+    </div>
+    <!-- WRAPPER END -->
+
+    <!-- JAVASCRIPT START -->
+    <script src="js/require.js" data-main="js/main"></script>
+    <!-- JAVASCRIPT END -->
+
+  </body>
+
 </html>
