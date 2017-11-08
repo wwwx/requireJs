@@ -20,6 +20,7 @@
   <body>
     <div class="loading"></div>
     <div class="wrapper" id="app">
+      <!-- <item-list></item-list> -->
       <!--BANNER START-->
       <section class="banner rel">
         <date-component></date-component>
@@ -27,29 +28,46 @@
         <img src="//i0.ulecdn.com/i/event/2017/1111/province/jilin/banner_02.jpg" width="100%">
       </section>
       <!--/BANNER END-->
+      
 
-      <section id="shop01">
+      <section id="shop01" class="hide">
         <h3 class="title">
           <img src="//i0.ulecdn.com/i/event/2017/1111/province/title_bk_1.jpg" width="100%">
         </h3>
         <div class="list">
           <ul class="ul-style clearfix"></ul>
         </div>
+        <list-more-btn></list-more-btn>
       </section>
-      <section id="shop02">
+      <section id="shop02" class="hide">
         <h3 class="title">
           <img src="//i0.ulecdn.com/i/event/2017/1111/province/title_ys_1.jpg" width="100%">
         </h3>
         <div class="list">
           <ul class="ul-style clearfix"></ul>
         </div>
+        <list-more-btn></list-more-btn>
       </section>
       
       <!-- BOTTOM START -->
-      <ad-component></ad-component>
-      <rule-component></rule-component>
+      <section class="bottomAd" v-cloak>
+        <div class="list">
+          <ul class="ul-style clearfix">
+            <li v-for="item in bottomAds"><a v-bind:href="item.link">
+              <img v-bind:src="item.imgUrl | noHttp" width="100%">
+            </a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="ruleBox" v-cloak>
+        <h3 class="ruleTitle">活动规则：</h3>
+        <div class="ruleCon">
+          <ul class="ruleUl">
+            <li v-for="item in rules"><span v-html="item.title"></span></li>
+          </ul>
+        </div>
+      </section>
       <!-- BOTTOM END -->
-
 
     </div>
     <!-- WRAPPER END -->
